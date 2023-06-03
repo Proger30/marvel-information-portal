@@ -18,6 +18,7 @@ const CharList = (props) => {
 
     useEffect (()=> {
         onRequest(offset, true);
+        console.log('render...')
         // eslint-disable-next-line
     }, [])
 
@@ -96,7 +97,7 @@ const View = ({chars, onCharSelected, setRef, focusOnClick, items, newItemLoadin
             mountOnEnter
             // unmountOnExit
             classNames="card"
-            key={id}
+            // key={id}
         >
             <li className="char__item"
                 key={id}
